@@ -1,0 +1,164 @@
+/* Styles applied to the entire body */
+*{
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: .05rem;
+    font-size: 20px;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+
+
+/* header styles */
+
+header a{
+    color: black;
+}
+
+header nav{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+header p{
+    margin: 0 .5rem;
+}
+
+header {
+    margin-bottom: 6%;
+}
+
+
+/* mission styles */
+#mission {
+    background-image: url(/resources/missionBackground.webp);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#mission div {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
+
+#mission h2{
+    margin: 1% 0;
+    font-size: 30px;
+}
+
+#mission h4{
+    margin: 1% 0;
+}
+
+
+
+
+/* portfolio styles */
+
+#portfolio h2{
+    margin: 7% 0 0 5%;
+    font-size: 30px;
+}
+
+#portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    
+}
+
+.card img{
+    width: 220px;
+    height: auto;
+    padding: 10px;
+
+}
+
+.card span{
+    padding-left: 2%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* Investment team */
+#team-container{
+    background-image: url(/resources/teamBackground.webp);
+    color: white;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.card-team img{
+    width: 220px;
+    height: auto;
+    margin: 7%  0  2% 0;
+}
+
+.card-team {
+    width: 40%;
+    /* margin: 0 auto; */
+}
+
+#investment-team h2{
+    font-size: 34px;
+    margin-bottom: 1%;
+}
+
+#investment-team h3 {
+    font-size: 26px;
+} 
+
+/* footer styles */
+footer h2 {
+    font-size:  34px;
+}
+
+#number{
+    margin-bottom: 8%;
+}
+/* ---------------------Buiding the company page using mobile first approach------------------------- */
+
+@media screen and (min-width: 620px){
+    #team-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (min-width: 920px){
+    #team-container{
+        flex-wrap: nowrap;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 960px){
+    /* the team breaks into a singel row 
+    the portfolio is now 3 rows with the first 2 having to cards and the last one one card */
+}
+
+
